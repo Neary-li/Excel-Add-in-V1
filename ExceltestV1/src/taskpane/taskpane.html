@@ -1,0 +1,131 @@
+<!-- Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License. -->
+<!-- This file shows how to design a first-run page that provides a welcome screen to the user about the features of the add-in. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contoso Task Pane Add-in</title>
+
+    <!-- Office JavaScript API -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+
+    <!-- For more information on Office UI Fabric, visit https://developer.microsoft.com/fabric. -->
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/9.6.1/css/fabric.min.css"/>
+
+    <!-- Template styles -->
+    <link href="taskpane.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="ms-font-m ms-welcome ms-Fabric">
+    <header class="ms-welcome__header ms-bgColor-neutralLighter">
+        <img width="90" height="90" src="../../assets/logo-filled.png" alt="Contoso" title="Contoso" />
+        <h1 class="ms-font-su">Welcome</h1>
+    </header>
+    <!-- <section id="sideload-msg" class="ms-welcome__main">
+        <h2 class="ms-font-xl">Please sideload your add-in to see app body.</h2>
+    </section>
+    <main id="app-body" class="ms-welcome__main" style="display: none;">
+        <h2 class="ms-font-xl"> Discover what Office Add-ins can do for you today! </h2>
+        <ul class="ms-List ms-welcome__features">
+            <li class="ms-ListItem">
+                <i class="ms-Icon ms-Icon--Ribbon ms-font-xl"></i>
+                <span class="ms-font-m">Achieve more with Office integration</span>
+            </li>
+            <li class="ms-ListItem">
+                <i class="ms-Icon ms-Icon--Unlock ms-font-xl"></i>
+                <span class="ms-font-m">Unlock features and functionality</span>
+            </li>
+            <li class="ms-ListItem">
+                <i class="ms-Icon ms-Icon--Design ms-font-xl"></i>
+                <span class="ms-font-m">Create and visualize like a pro</span>
+            </li>
+        </ul>
+        <p class="ms-font-l">Modify the source files, then click <b>Run</b>.</p>
+        <div role="button" id="run" class="ms-welcome__action ms-Button ms-Button--hero ms-font-xl">
+            <span class="ms-Button-label">Run</span> -->
+        </div>
+    </main>
+
+
+    <section class="ms-font-m">
+        <p>注意：单元格处于编辑状态时请不要点击按钮！</p>
+    </section>
+    <!-- 功能部分 -->
+    <section class="samples">
+        <div class="titleBox clearfix">
+            <sapn class="title">功能</sapn>
+            <span class="title-dec"></span>
+        </div>
+        <button id="add-btn" class="ms-Button">
+            <span class="ms-Button-label">调试</span>
+      </button>
+    
+        <!-- 借方减贷方 按钮-->
+        <button id="B-L" class="ms-Button">
+              <span class="ms-Button-label">借方 减 贷方</span>
+        </button>
+        <!-- 贷方减借方 按钮-->
+        <button id="L-B" class="ms-Button">
+              <span class="ms-Button-label">贷方 减 借方</span>
+        </button>
+    </section>
+    
+    
+    <!-- 表格部分 -->
+    <section class="tables">
+        <div class="titleBox clearfix">
+            <sapn class="title">表格</sapn>
+            <span class="title-dec"></span>
+        </div>
+        <div class="tableList">
+            <!-- 创建表 -->
+            <button id="setup" class="ms-Button">
+                  <span class="ms-Button-label">新建会计分录和分类账</span>
+            </button>
+            <button id="profitSheet" class="ms-Button">
+                    <span class="ms-Button-label">利润表</span>
+            </button>
+            <button id="equitySheet" class="ms-Button">
+                    <span class="ms-Button-label">所有者权益变动表</span>
+            </button>
+            <button id="balanceSheet" class="ms-Button">
+                    <span class="ms-Button-label">负债资产表</span>
+            </button>
+            <button id="cashFlowSheet" class="ms-Button">
+                    <span class="ms-Button-label">现金流量表</span>
+            </button>
+            <button id="analyseSheet" class="ms-Button">
+                    <span class="ms-Button-label">能力指标分析</span>
+            </button>
+        </div>
+    
+    
+    
+        <!-- <div class="insertBtns"> -->
+        <!-- 在上边插入行 按钮 -->
+        <!-- <button id="insertRowUpBtn" class="ms-Button up">
+                    <span class="ms-Button-label">上插入行</span>
+            </button> -->
+        <!-- 在左边插入列 按钮 -->
+        <!-- <button id="insertColLeftBtn" class="ms-Button left">
+                    <span class="ms-Button-label">左插入列</span>
+            </button> -->
+        <!-- 在右边插入列 按钮 -->
+        <!-- <button id="insertColRightBtn" class="ms-Button right">
+                    <span class="ms-Button-label">右插入列</span>
+            </button> -->
+        <!-- 在下边插入行 按钮 -->
+        <!-- <button id="insertRowDownBtn" class="ms-Button down">
+                        <span class="ms-Button-label">下插入行</span>
+            </button> -->
+        <!-- </div> -->
+    </section>
+
+
+</body>
+
+</html>
